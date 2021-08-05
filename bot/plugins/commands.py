@@ -55,7 +55,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/CrazyBotsz"
+                                    '💗 Thanks for using 💖', url="https://t.me/ask_me_movies"
                                 )
                         ]
                     ]
@@ -74,7 +74,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/CrazyBotsz"
+                                    '💗 Thanks for using 💖', url="https://t.me/ask_me_movies"
                                 )
                         ]
                     ]
@@ -93,7 +93,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/CrazyBotsz"
+                                    '💗 Thanks for using 💖', url="https://t.me/ask_me_movies"
                                 )
                         ]
                     ]
@@ -118,15 +118,13 @@ async def start(bot, update):
     
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Translation.START_TEXT.format(
-                update.from_user.first_name),
-        reply_markup=reply_markup,
+        text="🙄 I'm still alive",
         parse_mode="html",
         reply_to_message_id=update.message_id
     )
 
 
-@Client.on_message(filters.command(["help"]) & filters.private, group=1)
+#@Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
     buttons = [[
         InlineKeyboardButton('Home ⚡', callback_data='start'),
@@ -146,7 +144,7 @@ async def help(bot, update):
     )
 
 
-@Client.on_message(filters.command(["about"]) & filters.private, group=1)
+#@Client.on_message(filters.command(["about"]) & filters.private, group=1)
 async def about(bot, update):
     
     buttons = [[
