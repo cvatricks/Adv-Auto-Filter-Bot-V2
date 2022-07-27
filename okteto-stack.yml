@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  fltr:
+    build: .
+    environment:
+      APP_ID: $APP_ID  
+      API_HASH: $API_HASH  
+      BOT_TOKEN: $BOT_TOKEN
+      FORCESUB_CHANNEL: $FORCESUB_CHANNEL
+      DB_URI: $DB_URI
+      USER_SESSION: $USER_SESSION
+    ports:
+      - 8080:8080
+    restart: unless-stopped
